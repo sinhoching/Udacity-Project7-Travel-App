@@ -1,0 +1,49 @@
+#logo {
+    width: 30%;
+    margin: 20px;
+    max-width: 120px;
+    min-width: 75px;
+    position: absolute;
+}
+
+#header {
+    grid-area: hd;
+    text-align: center;
+    line-height: 2.5;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #0F4C81;
+}
+
+#nav-bar {
+    grid-area: nb;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    word-spacing: 200px;
+    text-align: center;
+    line-height: 4;
+}
+
+.link {
+    text-decoration: none;
+    color: #0F4C81;
+}
+
+.link:hover {
+    background-color: #0F4C81;
+    color: white;
+}
+
+footer {
+    height: 1%;
+    text-align: center;
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    font-family: arial;
+    font-size: 15px;
+    color: gainsboro;
+    padding: 20px;
+}

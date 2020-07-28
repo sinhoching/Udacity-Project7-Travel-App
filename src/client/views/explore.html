@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Travel App</title>
+  <script type="text/javascript" src="../../../dist/main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <img id="logo" src="../media/logo.jpg" alt="Time To Travel Logo">
+  <div class="container">
+    <h1 id="header">Travel Planner</h1>
+    <nav id="nav-bar">
+      <a class="link" href="index.html">HOME</a>
+      <a class="link" href="explore.html">EXPLORE</a>
+      <a class="link" href="about.html">ABOUT</a>
+    </nav>
+    <div id="menu-bar">
+      <button id="add-btn" type="button">+ Trip</button>
+    </div>
+    <div class="content-box">
+      <div id="add-trip-box">
+        <label for="destination">My trip to : </label>
+        <input type="text" id="destination" name="destination" placeholder="Enter Location">
+        <br><label for="departing">Departing : </label>
+        <input id="departing" name="departing" type="date">
+        <br><label for="returning">Returning : </label>
+        <input id="returning" name="returning" type="date">
+        <div id="edit-button-1">
+          <button class="content-button" id="save-btn-1">save trip</button>
+          <button class="content-button" id="remove-btn-1">remove trip</button>
+        </div>
+      </div>
+      <div id="box-1">
+        <img id="trip-image" alt="Trip Image">
+        <div id="trip-info">
+          <div>My trip to : <span class="input" id="destination-input"></span></div>
+          <div>Departing : <span class="input" id="departing-input"></span></div>
+          <div>Returning : <span class="input" id="returning-input"></span></div>
+        </div>
+        <div id="edit-button-2">
+          <button class="content-button" id="save-btn-2">save trip</button>
+          <button class="content-button" id="remove-btn-2">remove trip</button>
+        </div>
+        <div id="count-down"><span>destination</span> is <span>numberofdate</span> days away</div>
+        <div id="weather-forecase">Typical weather for then is :
+          <br><span>high-temp</span>, <span>low-temp</span>
+          <br><span>prediction</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>Copyright © 2020 Sin Ho Ching Contact: sinhochingvictoria@gmail.com</footer>
+</body>
+
+</html>

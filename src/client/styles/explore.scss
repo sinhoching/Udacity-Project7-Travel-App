@@ -1,0 +1,162 @@
+.container {
+    max-height: 60%;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10em 5em 5em 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+        "hd"
+        "nb"
+        "mb"
+        "cb";
+}
+
+#menu-bar {
+    grid-area: mb;
+    width: 100%;
+}
+
+#add-btn {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    right: 10%;
+    margin-top: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: dimgrey;
+    background-color: white;
+}
+
+#add-btn:hover {
+    background-color: #0F4C81;
+    color: white;
+}
+
+.content-box {
+    grid-area: cb;
+    width: 100%;
+}
+
+#add-trip-box {
+    display: none;
+    width: 100%;
+    min-height: 150px;
+    text-align: center;
+    background-color: dimgrey;
+    line-height: 2.5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+label[for="destination"] {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+label[for="departing"] {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+label[for="returning"] {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+#destination {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: dimgrey;
+}
+
+#departing {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: dimgrey;
+}
+
+#returning {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: dimgrey;
+}
+
+#box-1 {
+    background-color: #0F4C81;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: 
+    "img info" 
+    "img info" 
+    "img info" 
+    "img info" 
+    ". edit" 
+    ". count" 
+    ". for" 
+    ". for";
+}
+
+#trip-image {
+    grid-area: img;
+}
+
+#trip-info {
+    grid-area: info;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+#edit-button {
+    grid-area: edit;
+    word-spacing: 30px;
+    padding-bottom: 10px;
+}
+
+.content-button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: dimgrey;
+    background-color: white;
+    margin: 10px;
+}
+.content-button:hover {
+    background-color: #0F4C81;
+    color: white;
+}
+
+#count-down {
+    grid-area: count;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+#weather-forecase {
+    grid-area: for;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+

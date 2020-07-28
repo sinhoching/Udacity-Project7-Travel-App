@@ -1,0 +1,65 @@
+.container {
+    max-height: 60%;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10em 5em 15em 5em 5em;
+    grid-gap: 10px;
+    grid-template-areas:
+        "hd"
+        "nb"
+        "tt"
+        "tq"
+        "sb";
+}
+
+#background {
+    z-index: -1;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    bottom: 0;
+}
+
+#title {
+    grid-area: tt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    line-height: 5;
+    color: dimgrey;
+}
+
+#travel-quote {
+    grid-area: tq;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+    color: dimgrey;
+}
+
+.index-button {
+    grid-area: sb;
+}
+
+#start-btn {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: dimgrey;
+    background-color: white;
+}
+
+#start-btn:hover {
+    background-color: #0F4C81;
+    color: white;
+}
