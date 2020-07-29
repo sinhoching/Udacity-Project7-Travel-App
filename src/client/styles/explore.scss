@@ -42,7 +42,7 @@
 }
 
 #add-trip-box {
-    display: none;
+
     width: 100%;
     min-height: 150px;
     text-align: center;
@@ -94,7 +94,11 @@ label[for="returning"] {
     color: dimgrey;
 }
 
-#box-1 {
+.box-gap {
+    padding-bottom: 10px;
+}
+
+.trip-box {
     background-color: #0F4C81;
     padding: 30px;
     display: grid;

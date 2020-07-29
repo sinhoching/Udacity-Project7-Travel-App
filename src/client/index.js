@@ -5,7 +5,7 @@ import './styles/explore.scss'
 
 console.log(performAction);
 
-alert("I am a pumkin pie~")
+("I am a pumkin pie~")
 console.log("CHANGE!!");
 
 export { performAction }
